@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* IMAGEN DE ϜONDO------------------------------------ */
+body{
+    background-image: url(https://www.xmple.com/wallpaper/green-black-highlight-gradient-linear-2880x5120-c2-000000-556b2f-l-67-a-90-f-21.svg);
+    max-width: 100%;
+    height: auto;
+}
+
+/*BARRA DE NAVEGACIÓN-------------------------------*/
+
+.navbar{
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, 0.192);
+}
+
+/*elegir miembro barra de nav*/
+
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.192);
+}
+
+/*botón y búsqueda barra de nav*/
+
+.btn, .form-control{
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+}
+
+/* de Bootstrap se cambio imágenes, color  de fondo, de letra, posición */
+
+/*NOMBRE-----------------------------------------------------*/
+/* nombre banda */
+#titulo{
+    color: whitesmoke;
+    font-size: 6em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    top: 60px;
+    text-shadow: 2px 2px 4px black;
+}
+
+/*IMAGEN PRESENTACION--------------------------------------------*/
+/* fotos banda */
+.carousel-item{
+    margin-left: 85px;
+    width: 1100px;
+}
+/* flechas fotos */
+.carousel-control-prev-icon .carousel-control-next-icon{
+    margin-top: 375px;
+}
+/* responsive */
+@media only screen and (max-width: 768px){}
+    [class*="carousel-item"]{
+      width: 100%;
+      margin-left: 0;
+}
+
+/* de Bootstrap se cambio imágenes, posición, rensponsive*/
+
+/*EXTRA INϜO-------------------------------------------------------*/
+
+/* aside tour info */
+.card{
+    background-color: rgb(253, 224, 169);
+    width: 18rem;
+    color: rgb(3, 3, 3);
+    display: flex;
+    float: right;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.card-title{
+    font-weight: bold;
+}
+/* boton mas info */
+.btn{
+    background-color: rgb(250, 211, 137);
+    color: rgb(3, 3, 3)
+}
+
+/* de Bootstrap se cambio imágenes, color  de fondo, de letra */
+
+/*HISTORIA-------------------------------------------------------*/
+
+.parrafo{
+    color: whitesmoke;
+}
+
+
+/* TÍTULOS------------------------------------------------------- */
+
+#miembros, #historia, #discografia, #videos, #contacto{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+    font-family: Michroma;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*MIEMBROS-------------------------------------------------------*/
+
+.tarjeta{
+    max-width: inherit;
+    background-color: rgba(240, 248, 255, 0.116);
+    color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* imágenes miembros */
+.img-fluid{
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+}
+/* nombre miembro */
+.tarjeta-titulo{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.tarjeta-texto{
+    padding: 10px;
+    padding-top: 4em;
+}
+
+/* de Bootstrap se cambio imágenes, color  de fondo, de letra, posición */
+
+/*LETRA MAIN-----------------------------------------------------*/
+
+.espacio{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/*DISCOGRAϜIA---------------------------------------------------- */
+/* caja contenedora cds */
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* posicion discos */
+.img-disc{
+    float: left;
+    margin: 10px;
+}
+/* efecto al pasar puntero */
+.img-disc:hover {
+    margin-top: 2px;
+}
+
+.disc {
+    position:absolute;
+    opacity: 0;
+  }
+
+/* letra al pasar puntero */
+.img-disc:hover > .disc {
+    color: whitesmoke;
+    font-family: michroma;
+    font-weight: bold;
+    font-size: small;
+    text-shadow: 3px 3px 5px rgb(53, 53, 52);
+    position: absolute;
+    opacity: 3;
+  }
+
+/* VIDEOS -------------------------------------------------------*/
+
+/* #margen {
+    margin-left: 250px;
+    margin-bottom: 20px; 
+}*/
+
+/*Responsive */
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:600px;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* boton mostrar mas videos */
+#boton-vid{
+    border: 4px solid whitesmoke;
+    color: whitesmoke;
+    background-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.4rem;
+    padding: 0.8rem 1.6rem;
+}
+
+/*CONTACTO----------------------------------------------------- */
+/* formato formulario */
+.formulario {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+/* lugar rellenar datos */
+.label{
+    width: 100%;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.letra{
+    color: whitesmoke;
+}
+/* botones submitear */
+#boton {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 1em;
+}
+/* contacto whatsapp */
+.contacto{
+    color: whitesmoke;
+    font-family: calibri;
+    padding-top: 10px;
+    text-align: center;
+}
+/*ϜOOTER---------------------------------------------------------*/
+
+/* tabla */
+.tabla{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.192);
+    height: auto;
+    border-top: 3px double rgb(250, 211, 137);
+    border-bottom: 3px double rgb(250, 211, 137);
+    margin-top: 15%;
+    margin-left: 0;
+    padding: 20px;
+}
+/* información */
+td{
+    height: 40px;
+    padding-left: 30px;
+    font-family: michroma;
+    font-size: 1.8em;
+    color: whitesmoke;
+}
+
+#small{
+    font-family: calibri;
+    font-size: 1em;
+}
+/* foto tabla */
+.creador{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* derechos reservados */
+.copyright{
+    color: rgb(53, 53, 52);
+    font-family: michroma;
+    font-size: .7em;
+    text-align: center;
+    padding-top: 40px;
+}
+/* boton volver a inicio */
+.pie{
+    float: right;
+    text-align: left;
+    color: whitesmoke;
+    font-family: calibri;
+    font-size: 1em;
+    margin: 10px;
+}
